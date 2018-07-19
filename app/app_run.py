@@ -22,6 +22,7 @@ def get_data(sentence):
     response = urllib.request.urlopen(req)
     buff = response.read()
     the_page = buff.decode('gbk')
+    print('hhhhhh')
     print(type(the_page),eval(the_page)['reply'])
     response.close()
     return eval(the_page)['reply']
